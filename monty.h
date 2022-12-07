@@ -48,13 +48,12 @@ typedef struct instruction_s
 
         /*PROTOTYPES*/
 
-
-void push_monty_stack(stack_t **stack, unsigned int line_number);
-void pall_monty_stack(stack_t **stack, unsigned int line_number);
-void pint_monty_stack(stack_t **stack, unsigned int line_number);
-void pop_monty_stack(stack_t **stack, unsigned int line_number);
-void swap_monty_stack(stack_t **stack, unsigned int line_number);
-void nop_monty_stack(stack_t **stack, unsigned int line_number);
-void add_monty_stack(stack_t **stack, unsigned int line_number);
+void push_monty(stack_t **stack, unsigned int line_number);
+void pall_monty(stack_t **stack, unsigned int line_number);
+void pint_monty(stack_t **stack, unsigned int line_number);
+void pop_monty(stack_t **stack, unsigned int line_number);
+void swap_monty(stack_t **stack, unsigned int line_number);
+void nop_monty(stack_t **stack, unsigned int line_number);
+void add_monty(stack_t **stack, unsigned int line_number);
 
 #endif 
