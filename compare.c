@@ -21,17 +21,14 @@ void compare(char *token, stack_t **stack, unsigned int line_number)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
-		{NULL, NULL}
-	};
+		{NULL, NULL}};
 
 	for (i = 0; func_list[i].opcode != NULL; i++)
 		if (strcmp(token, func_list[i].opcode) == 0)
 		{
 			func_list[i].f(stack, line_number);
 			foundMatch = 1;
-		
 		}
 	if (!foundMatch)
 		errorHandler(8, line_number);
-		
 }

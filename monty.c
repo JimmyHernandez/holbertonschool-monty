@@ -3,12 +3,12 @@
 gbv gv;
 
 /**
-* main - run the monty compiler
-* @argc: argument count
-* @argv: argument vector
-*
-* Return: always 0.
-*/
+ * main - run the monty compiler
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: always 0.
+ */
 int main(int argc, char **argv)
 {
 	size_t len = 0;
@@ -32,14 +32,14 @@ int main(int argc, char **argv)
 		if (!gv.token)
 			continue;
 		if (strcmp(gv.token, "push") == 0)
-		
+
 		{
 			value = strtok(NULL, " \t\n");
 			if (!value)
 				errorHandler(1, line_number);
 			gv.num = atoi(isNumber(value, line_number));
 		}
-		
+
 		compare(gv.token, &gv.stack, line_number);
 		free(gv.line);
 		gv.line = NULL;
@@ -49,12 +49,12 @@ int main(int argc, char **argv)
 }
 
 /**
-* isNumber - check if a string is numerical
-* @value: string to check
-* @line_number: line of code
-*
-* Return: string, if numerical
-*/
+ * isNumber - check if a string is numerical
+ * @value: string to check
+ * @line_number: line of code
+ *
+ * Return: string, if numerical
+ */
 char *isNumber(char *value, unsigned int line_number)
 {
 	unsigned int i = 0;
