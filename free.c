@@ -1,8 +1,10 @@
 #include "monty.h"
 
 /**
- * freeAll -It frees the line buffer, the stack,
- *  and the memory file if it's open
+ * freeAll - function that frees the global getline, stack_t
+ * and file if it exists
+ *
+ * Return: void
  */
 void freeAll(void)
 {
@@ -14,9 +16,10 @@ void freeAll(void)
 }
 
 /**
- * freeLinkedList - starting at the given node,
- *  by freeing each node and moving to the next node.
- * @stack: - A pointer to the top of the stack.
+ * freeLinkedList - a function that frees the linkedlist
+ * @stack: a pointer to the head of stack_t
+ *
+ * Return: void
  */
 
 void freeLinkedList(stack_t *stack)
@@ -30,3 +33,4 @@ void freeLinkedList(stack_t *stack)
 		stack = nextNode;
 	}
 }
+

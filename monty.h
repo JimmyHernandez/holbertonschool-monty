@@ -93,7 +93,7 @@ void freeLinkedList(stack_t *stack);
 void free_all(int all);
 int count_word(char *s);
 char **strtow(char *str);
-
+void free_everything(char **args);
 
 /* list_funcs1.c */
 size_t dlistint_len(const dlistint_t *h);

@@ -83,3 +83,4 @@ void errorHandler2(unsigned int errno, unsigned int line_number)
 	freeAll();
 	exit(EXIT_FAILURE);
 }
+
