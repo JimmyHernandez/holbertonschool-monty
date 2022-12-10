@@ -32,6 +32,8 @@ int main(int argc, char **argv)
 		if (!gv.token)
 			continue;
 		if (strcmp(gv.token, "push") == 0)
+		errorHandler(8, line_number);
+
 		{
 			value = strtok(NULL, " \t\n");
 			if (!value)
