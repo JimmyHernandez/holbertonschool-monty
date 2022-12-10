@@ -1,6 +1,5 @@
 #include "monty.h"
 
-gbv gv;
 
 /**
 * main - run the monty compiler
