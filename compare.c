@@ -29,7 +29,9 @@ void compare(char *token, stack_t **stack, unsigned int line_number)
 		{
 			func_list[i].f(stack, line_number);
 			foundMatch = 1;
+		
 		}
 	if (!foundMatch)
-		errorHandler(15, line_number);
+		errorHandler(8, line_number);
+		
 }

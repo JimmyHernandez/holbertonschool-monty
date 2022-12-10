@@ -32,14 +32,14 @@ int main(int argc, char **argv)
 		if (!gv.token)
 			continue;
 		if (strcmp(gv.token, "push") == 0)
-		errorHandler(8, line_number);
-
+		
 		{
 			value = strtok(NULL, " \t\n");
 			if (!value)
 				errorHandler(1, line_number);
 			gv.num = atoi(isNumber(value, line_number));
 		}
+		
 		compare(gv.token, &gv.stack, line_number);
 		free(gv.line);
 		gv.line = NULL;
